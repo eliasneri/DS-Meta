@@ -2,7 +2,6 @@ package com.dsmeta.DSMeta.entities;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Objects;
 
 import javax.persistence.Entity;
@@ -117,7 +116,11 @@ public class Sale implements Serializable {
 			return false;
 		Sale other = (Sale) obj;
 		return Objects.equals(id, other.id);
+		
+		 // if (Objects.isNull(obj))
 	}
+	
+	
 	
 	
 
