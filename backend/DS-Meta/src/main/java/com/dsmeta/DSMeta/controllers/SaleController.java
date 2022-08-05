@@ -1,6 +1,5 @@
 package com.dsmeta.DSMeta.controllers;
 
-import java.io.Serializable;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -15,8 +14,7 @@ import com.dsmeta.DSMeta.services.SaleService;
 
 @RestController
 @RequestMapping(value = "/sales")
-public class SaleController implements Serializable{
-	private static final long serialVersionUID = 1L;
+public class SaleController {
 		
 		@Autowired
 		private SaleService service;
